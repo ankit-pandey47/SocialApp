@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  th:fragment="layout(content)">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Responsive Navbar Template</title>
+    
+
+    
+     <!-- Bootstrap CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (full version) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+        <link rel="stylesheet " href="/css/merastyle.css">
+    
+</head>
+
+<body>
+
+    <!-- Single Navbar -->
+    <nav class="navbar navbar-custom">
+        <a class="nav-link active" th:href="@{/user/frontpage}"><i class="fa-solid fa-house"></i></a>
+        <a class="nav-link" th:href="@{/user/search-form}"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a class="nav-link" th:href="@{/user/createpost}"><i style="border:2px solid black; padding: 3px; border-radius: 8px;" class="fas fa-plus"></i></a>
+        <a class="nav-link" href="#"><i class="fas fa-paper-plane"></i>
+        </a>
+        <a class="nav-link" th:href="@{/user/myprofile}"><i class="fa-solid fa-user"></i></a>
+       
+    </nav>
+
+    
+    
+    <!-- Animated, fixed, two-colored text -->
+    <h3 class="animated-text">WeConnect</h3>
+
+   <!-- Main Content -->
+   
+    <div class="container-fluid main">
+        <!-- Placeholder for other content to showcase the fixed text effect -->
+        
+        <!-- More content... -->
+   
+        
+                <div th:replace="${content}"></div>
+            
+    </div>
+     
+    
+    
+ 
+   <script src="/js/myjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

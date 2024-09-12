@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    padding-top: 80px;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: rgb(90, 126, 255);
+    z-index: 1000;
+}
+
+.navbar-custom .nav-link {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.animated-text {
+    margin-left: 110px;
+}
+
+.main {
+    margin-left: 110px;
+    /*  margin-top: 90px;  */
+    max-width: 100%;  /* Make sure it doesn't overflow */
+    width: calc(100% - 110px); /* Adjust for navbar width */
+    padding: 10px;
+}
+.notification{
+	position:absolute; right:80px ; top:50px;
+}
+
+
+@media (max-width: 768px) {
+    /* Adjust navbar for mobile */
+    .navbar-custom {
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 15px;
+        top: auto;
+        height: 60px;
+        width: 100%;  /* Full width on mobile */
+        padding-top: 0;
+    }
+
+    .navbar-custom .nav-link {
+        padding: 10px;
+    }
+
+    /* Adjust text margin */
+    .animated-text {
+        margin-left: 20px;
+        
+        padding: 0 10px;
+       
+    }
+    
+    /* Adjust main content for mobile */
+    .main {
+        
+        width: 100%;
+        padding: 0 10px;
+        margin-left: 0;  /* No left margin on mobile */
+         /* margin-top: 10px; */  /* To avoid overlap with the navbar */
+    }
+      .notification{
+	position:absolute;
+	 right:75px ; 
+	 top:33px;
+}
+}
+
+/* Profile Section Styles */
+.profile-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.profile-header h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.profile-header p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.profile-header .connections {
+    font-size: 21px;
+    color: #495057;
+}
+
+.profile-header .connections:hover{
+	cursor: pointer;
+	
+}
+
+
+.profile-content {
+    padding: 20px;
+}
+.btn-connect {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-connect:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.post-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 16px;
+    color: #495057;
+}
+
+.post-card .post-date {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+@media (max-width: 768px) {
+    .profile-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-header h2 {
+        font-size: 20px;
+    }
+
+    .profile-header p {
+        font-size: 14px;
+    }
+
+    .profile-header .connections {
+        font-size: 16px;
+    }
+}
+
+/* Button Styles */
+.btn-grey {
+    background-color: #868e96;
+    color: white;
+    border: none;
+}
+
+.btn-grey:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+/* Animated Text */
+.animated-text {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 3rem;
+   font-family: 'Dancing Script', cursive;
+    z-index: 999;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .animated-text {
+        
+        top: 0;
+        font-size: 2rem;
+    }
+    
+  
+    
+}
+
+
+
+
+
